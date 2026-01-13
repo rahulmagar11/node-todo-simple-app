@@ -18,13 +18,13 @@ EXPOSE 3000
 
 - Build the docker image using the application code and Dockerfile
 ```
-docker build -t day02-todo .
+docker build -t simple-todo .
 ```
 
 - Create a public repository on hub.docker.com and push the image to remote repo
 ```
 docker login
-docker tag day02-todo:latest username/new-reponame:tagname
+docker tag simple-todo:latest username/new-reponame:tagname
 docker images
 docker push username/new-reponame:tagname
 ```
